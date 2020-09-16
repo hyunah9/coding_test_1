@@ -35,3 +35,80 @@ def getDayName(a,b):
 
 
 print(getDayName(5,24))
+
+# def solution(a, b):
+#     answer = ''
+#     date = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
+#     date_num31 = [5, 7, 8, 10, 12]
+#     date_num30 = [4, 6, 9, 11]
+#     c = (b % 7 ) - 1
+#
+#     if 1 <= a <= 12 and 1 <= b <= 31:
+#         if a == 1:  # 기준은 금
+#             for i in range(7):
+#                 if c == i:
+#                     answer = date[(c)]
+#                     break
+#         elif a == 2:  # 기준은 월 즉 DATE[3]
+#             for i in range(7):
+#                 if c == i:
+#                     answer = date[(c + 3) %7]
+#                     break
+#         elif a == 3:
+#             for i in range(7):
+#                 if c == i:
+#                     answer = date[(c + 1) %7]
+#                     break
+#
+#         elif a == 5 or 7 or 8 or 10 or 12:
+#             for p in range(5):
+#                     if date_num31[p] == 5:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 3 )%7]
+#                                 break
+#                     elif date_num31[p] == 7:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 5)%7]
+#                                 break
+#                     elif date_num31[p] == 8:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c +5)%7]
+#                                 break
+#                     elif date_num31[p] == 10:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 8)%7]
+#                                 break
+#                     elif date_num31[p] == 12:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 11)%7]
+#                                 break
+#         elif a == 4 or 6 or 9 or 11:
+#             for o in range(4):
+#                     if date_num30[o] == 4:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 2 )%7]
+#                                 break
+#                     elif date_num30[o] == 6:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 4)%7]
+#                                 break
+#                     elif date_num30[o] == 9:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c + 10)%7]
+#                                 break
+#                     elif date_num30[o] == 11:
+#                         for i in range(7):
+#                             if c == i:
+#                                 answer = date[(c+ 12)%7]
+#                                 break
+#     return answer
+#
+# print(solution(5,24))
